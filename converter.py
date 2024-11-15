@@ -184,8 +184,8 @@ class EFTConverterApp:
                     f"{institution_num}"  # 4 char
                     f"{transit_num}"  # 5 char
                     f"{account_num}"  # 12 char
-                    f"{amount_formatted}"  # 11 char
-                    f"{' ' * (80 - 1 - 23 - 6 - 13 - 6 - 4 - 5 - 12 - 11)}"  # Remaining spaces
+                    f"{amount_formatted}"  # 10 char
+                    f"{' ' * (80 - 1 - 23 - 6 - 13 - 6 - 4 - 5 - 12 - 10)}"  # Remaining spaces
                 )
                 detail = detail[:80]
                 dat_content.append(detail)
