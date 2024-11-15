@@ -1,0 +1,3 @@
+([('converter',
+   '/Users/sameer/Desktop/Projects/bank-automation/dist/converter',
+   'EXECUTABLE')],)
