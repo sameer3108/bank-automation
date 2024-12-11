@@ -10,13 +10,13 @@ BATCH_FILE = "batch_number.txt"
 def get_batch_number():
     if not os.path.exists(BATCH_FILE):
         with open(BATCH_FILE, "w") as f:
-            f.write("0248")               # Company wanted it to start at 248, could be anything
+            f.write("0001")               
         return 248 
     with open(BATCH_FILE, "r") as f:
         try:
             return int(f.read())
         except:
-            return 248
+            return 1
 
 # Increment batch number
 def increment_batch_number(current):
@@ -132,7 +132,7 @@ class EFTConverterApp:
             # Header Line
             header = (
                 "H" 
-                "TPABK12345"  # 10 char
+                "ORG1234567"  # 10 char
                 "C"  # Credit/Debit indicator
                 "C460"  # CPA Code 3 char
                 f"{payment_date}"  # 6 char
